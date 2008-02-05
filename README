@@ -1,0 +1,110 @@
+eqonomize
+------------------------------------------
+Eqonomize is a personal accounting software, with focus on efficiency 
+and ease of use for the small household economy. Eqonomize provides a 
+complete solution, with bookkeeping by double entry and support for 
+scheduled recurring transactions, security investments, and budgeting. 
+It gives a clear overview of past and present transactions, and 
+development of incomes and expenses, with descriptive tables and charts, 
+as well as an approximation of future account values.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  kdelibs4-3.5.7-1
+  qt3-3.3.8-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  perl-5.8.8-4
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://eqonomize.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/eqonomize/ 
+
+-------------------------------------------
+
+Build instructions:
+  unpack eqonomize-0.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./eqonomize-0.5-X.cygport all
+
+This will create:
+  /usr/src/eqonomize-0.5-X-src.tar.bz2
+  /usr/src/eqonomize-0.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/eqonomize.sh
+  /usr/bin/eqonomize.exe
+  /usr/share/applications/kde/eqonomize.desktop
+  /usr/share/apps/eqonomize/eqonomizeui.rc
+  /usr/share/doc/HTML/en/eqonomize/accounts-view.png
+  /usr/share/doc/HTML/en/eqonomize/ask-save.png
+  /usr/share/doc/HTML/en/eqonomize/common
+  /usr/share/doc/HTML/en/eqonomize/confirm-schedule.png
+  /usr/share/doc/HTML/en/eqonomize/csv-columns.png
+  /usr/share/doc/HTML/en/eqonomize/edit-budget.png
+  /usr/share/doc/HTML/en/eqonomize/expenses-view.png
+  /usr/share/doc/HTML/en/eqonomize/index.cache.bz2
+  /usr/share/doc/HTML/en/eqonomize/index.docbook
+  /usr/share/doc/HTML/en/eqonomize/new-account.png
+  /usr/share/doc/HTML/en/eqonomize/new-security.png
+  /usr/share/doc/HTML/en/eqonomize/qif-date-format.png
+  /usr/share/doc/HTML/en/eqonomize/recurrence.png
+  /usr/share/doc/HTML/en/eqonomize/refund.png
+  /usr/share/doc/HTML/en/eqonomize/schedule-view.png
+  /usr/share/doc/HTML/en/eqonomize/securities-view.png
+  /usr/share/doc/HTML/en/eqonomize/security-buy.png
+  /usr/share/doc/HTML/en/eqonomize/split-transaction.png
+  /usr/share/doc/eqonomize-0.5/AUTHORS
+  /usr/share/doc/eqonomize-0.5/COPYING
+  /usr/share/doc/eqonomize-0.5/ChangeLog
+  /usr/share/doc/eqonomize-0.5/INSTALL
+  /usr/share/icons/hicolor/128x128/apps/eqonomize.png
+  /usr/share/icons/hicolor/128x128/mimetypes/eqz.png
+  /usr/share/icons/hicolor/16x16/apps/eqonomize.png
+  /usr/share/icons/hicolor/16x16/mimetypes/eqz.png
+  /usr/share/icons/hicolor/22x22/apps/eqonomize.png
+  /usr/share/icons/hicolor/22x22/mimetypes/eqz.png
+  /usr/share/icons/hicolor/32x32/apps/eqonomize.png
+  /usr/share/icons/hicolor/32x32/mimetypes/eqz.png
+  /usr/share/icons/hicolor/48x48/apps/eqonomize.png
+  /usr/share/icons/hicolor/48x48/mimetypes/eqz.png
+  /usr/share/icons/hicolor/64x64/apps/eqonomize.png
+  /usr/share/icons/hicolor/64x64/mimetypes/eqz.png
+  /usr/share/locale/de/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/es/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/fr/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/it/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/nl/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/sk/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/sv/LC_MESSAGES/eqonomize.mo
+  /usr/share/mimelnk/application/x-eqonomize.desktop
+
+------------------
+
+Port Notes:
+
+----- version 0.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
