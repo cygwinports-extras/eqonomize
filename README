@@ -9,23 +9,23 @@ development of incomes and expenses, with descriptive tables and charts,
 as well as an approximation of future account values.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  kdelibs4-3.5.7-1
-  qt3-3.3.8-1
+  cygwin-1.5.25-15
+  kdelibs4-3.5.10-1
+  libqt3-3.3.8b-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.7-1
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  perl-5.8.8-4
-  pkg-config-0.21-1
+  perl-5.10.0-5
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -37,15 +37,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack eqonomize-0.5-X-src.tar.bz2
+  unpack eqonomize-0.5.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./eqonomize-0.5-X.cygport all
+  cygport ./eqonomize-0.5.1-X.cygport all
 
 This will create:
-  /usr/src/eqonomize-0.5-X-src.tar.bz2
-  /usr/src/eqonomize-0.5-X.tar.bz2
+  /usr/src/eqonomize-0.5.1-X-src.tar.bz2
+  /usr/src/eqonomize-0.5.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -73,10 +73,10 @@ Files included in the binary package:
   /usr/share/doc/HTML/en/eqonomize/securities-view.png
   /usr/share/doc/HTML/en/eqonomize/security-buy.png
   /usr/share/doc/HTML/en/eqonomize/split-transaction.png
-  /usr/share/doc/eqonomize-0.5/AUTHORS
-  /usr/share/doc/eqonomize-0.5/COPYING
-  /usr/share/doc/eqonomize-0.5/ChangeLog
-  /usr/share/doc/eqonomize-0.5/INSTALL
+  /usr/share/doc/eqonomize-0.5.1/AUTHORS
+  /usr/share/doc/eqonomize-0.5.1/COPYING
+  /usr/share/doc/eqonomize-0.5.1/ChangeLog
+  /usr/share/doc/eqonomize-0.5.1/INSTALL
   /usr/share/icons/hicolor/128x128/apps/eqonomize.png
   /usr/share/icons/hicolor/128x128/mimetypes/eqz.png
   /usr/share/icons/hicolor/16x16/apps/eqonomize.png
@@ -101,6 +101,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.5.1-1 -----
+Version bump.
 
 ----- version 0.5-1 -----
 Initial release for Cygwin.
