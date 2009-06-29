@@ -1,5 +1,5 @@
 category: KDE Office
-requires: cygwin kdelibs4 libqt3
+requires: kdelibs4 libqt3
 sdesc: "KDE personal accounting program"
 ldesc: "Eqonomize is a personal accounting software, with focus on 
 efficiency and ease of use for the small household economy. Eqonomize 
