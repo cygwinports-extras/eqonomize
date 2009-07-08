@@ -9,24 +9,23 @@ development of incomes and expenses, with descriptive tables and charts,
 as well as an approximation of future account values.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  kdelibs4-3.5.10-1
-  libqt3-3.3.8b-1
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libkdecore5-4.2.4-1
+  libQtCore4-4.5.2-1
+  libQtGui4-4.5.2-1
+  libQtXml4-4.5.2-1
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  automoc4-0.9.88-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
-  perl-5.10.0-5
-  pkg-config-0.23a-2
-  sed-4.1.5-2
+  cmake-2.6.4-10
+  cygport-0.9.8-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
 
 Canonical website:
   http://eqonomize.sourceforge.net/
@@ -37,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack eqonomize-0.5.1-X-src.tar.bz2
+  unpack eqonomize-0.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./eqonomize-0.5.1-X.cygport all
+  cygport ./eqonomize-0.6-X.cygport all
 
 This will create:
-  /usr/src/eqonomize-0.5.1-X-src.tar.bz2
-  /usr/src/eqonomize-0.5.1-X.tar.bz2
+  /usr/src/eqonomize-0.6-X-src.tar.bz2
+  /usr/src/eqonomize-0.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -53,8 +52,7 @@ Files included in the binary package:
 
   /etc/postinstall/eqonomize.sh
   /usr/bin/eqonomize.exe
-  /usr/share/applications/kde/eqonomize.desktop
-  /usr/share/apps/eqonomize/eqonomizeui.rc
+  /usr/share/applications/kde4/eqonomize.desktop
   /usr/share/doc/HTML/en/eqonomize/accounts-view.png
   /usr/share/doc/HTML/en/eqonomize/ask-save.png
   /usr/share/doc/HTML/en/eqonomize/common
@@ -73,10 +71,12 @@ Files included in the binary package:
   /usr/share/doc/HTML/en/eqonomize/securities-view.png
   /usr/share/doc/HTML/en/eqonomize/security-buy.png
   /usr/share/doc/HTML/en/eqonomize/split-transaction.png
-  /usr/share/doc/eqonomize-0.5.1/AUTHORS
-  /usr/share/doc/eqonomize-0.5.1/COPYING
-  /usr/share/doc/eqonomize-0.5.1/ChangeLog
-  /usr/share/doc/eqonomize-0.5.1/INSTALL
+  /usr/share/doc/HTML/fr/eqonomize/common
+  /usr/share/doc/HTML/fr/eqonomize/index.cache.bz2
+  /usr/share/doc/HTML/fr/eqonomize/index.docbook
+  /usr/share/doc/eqonomize/AUTHORS
+  /usr/share/doc/eqonomize/COPYING
+  /usr/share/doc/eqonomize/ChangeLog
   /usr/share/icons/hicolor/128x128/apps/eqonomize.png
   /usr/share/icons/hicolor/128x128/mimetypes/eqz.png
   /usr/share/icons/hicolor/16x16/apps/eqonomize.png
@@ -89,11 +89,16 @@ Files included in the binary package:
   /usr/share/icons/hicolor/48x48/mimetypes/eqz.png
   /usr/share/icons/hicolor/64x64/apps/eqonomize.png
   /usr/share/icons/hicolor/64x64/mimetypes/eqz.png
+  /usr/share/kde4/apps/eqonomize/eqonomizeui.rc
+  /usr/share/locale/cs/LC_MESSAGES/eqonomize.mo
   /usr/share/locale/de/LC_MESSAGES/eqonomize.mo
   /usr/share/locale/es/LC_MESSAGES/eqonomize.mo
   /usr/share/locale/fr/LC_MESSAGES/eqonomize.mo
   /usr/share/locale/it/LC_MESSAGES/eqonomize.mo
   /usr/share/locale/nl/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/pt/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/eqonomize.mo
+  /usr/share/locale/ru/LC_MESSAGES/eqonomize.mo
   /usr/share/locale/sk/LC_MESSAGES/eqonomize.mo
   /usr/share/locale/sv/LC_MESSAGES/eqonomize.mo
   /usr/share/mimelnk/application/x-eqonomize.desktop
@@ -102,11 +107,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.5.1-1 -----
-Version bump.
-
------ version 0.5-1 -----
-Initial release for Cygwin.
+----- version 0.6-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
