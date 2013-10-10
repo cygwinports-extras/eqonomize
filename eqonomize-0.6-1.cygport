@@ -1,5 +1,0 @@
-inherit kde4
-
-DESCRIPTION="KDE personal accounting program"
-HOMEPAGE="http://eqonomize.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
